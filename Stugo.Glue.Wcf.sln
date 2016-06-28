@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stugo.Glue.Wcf", "Stugo.Glue.Wcf\Stugo.Glue.Wcf.csproj", "{9CF3D2BF-E5D6-494C-A666-B39877A1BC24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{9E438FB8-D3A6-47A7-BC89-34415AF1E38F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{CCFC0F4A-78EC-4A2E-8911-E725FF911310}"
+	ProjectSection(SolutionItems) = preProject
+		tools\NuGet\NuGet.Config = tools\NuGet\NuGet.Config
+		tools\NuGet\NuGet.exe = tools\NuGet\NuGet.exe
+		tools\NuGet\NuGet.targets = tools\NuGet\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSBuildVersioning", "MSBuildVersioning", "{304E415D-16F1-4204-9565-AE5DDDB2FCE0}"
+	ProjectSection(SolutionItems) = preProject
+		tools\MsBuildVersioning\MSBuildVersioning.dll = tools\MsBuildVersioning\MSBuildVersioning.dll
+		tools\MsBuildVersioning\MSBuildVersioning.targets = tools\MsBuildVersioning\MSBuildVersioning.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42459043-9F79-4272-B82E-2B6A86EAA4A8}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.cmd = build.cmd
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		GlobalVersionInfo.cs = GlobalVersionInfo.cs
+		publish.cmd = publish.cmd
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CF3D2BF-E5D6-494C-A666-B39877A1BC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF3D2BF-E5D6-494C-A666-B39877A1BC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF3D2BF-E5D6-494C-A666-B39877A1BC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF3D2BF-E5D6-494C-A666-B39877A1BC24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCFC0F4A-78EC-4A2E-8911-E725FF911310} = {9E438FB8-D3A6-47A7-BC89-34415AF1E38F}
+		{304E415D-16F1-4204-9565-AE5DDDB2FCE0} = {9E438FB8-D3A6-47A7-BC89-34415AF1E38F}
+	EndGlobalSection
+EndGlobal
