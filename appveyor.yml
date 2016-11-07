@@ -1,6 +1,6 @@
 environment:
   PROJECT_NAME: Stugo.Glue.Wcf
-  VERSION_NUMBER: 2.2.0
+  VERSION_NUMBER: 2.3.0
   VERSION_PRE_TAG: 
 
 version: $(VERSION_NUMBER).{build}
