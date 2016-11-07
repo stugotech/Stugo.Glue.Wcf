@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Stugo.Glue.Wcf</id>
+    <version>$version$</version>
+    <authors>Stugo Ltd</authors>
+    <description>WCF support for Stugo.Glue DI.</description>
+    <copyright>Copyright (c) Stugo Ltd 2016</copyright>
+    <dependencies>
+      <dependency id="Stugo.Glue" version="[2.5.0.8,3)" />
+      <dependency id="Stugo.Logging" version="[1.1.0.4,2)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\net40\*.*" target="lib\net40" />
+  </files>
+</package>
