@@ -9,19 +9,19 @@ namespace Stugo.Glue.Wcf
     public class WcfServiceHost : ServiceHost
     {
         private static readonly ILog logger = Logger.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        internal readonly IContainer container;
+        internal readonly IContainer Container;
 
 
         public WcfServiceHost(IContainer container, Type serviceType, bool includeExceptionDetailInFaults, params Uri[] baseAddresses)
             : base(serviceType, baseAddresses)
         {
-            logger.Debug($"Starting service host for {serviceType.FullName} at {string.Join(",", baseAddresses.Select(x => x.ToString()))}");
-            this.container = container;
+            logger.Debug($"Starting service host for {serviceType.FullName} at {string.Join(",", baseAddresses.Select(x => x.ToString()))}", ".ctor");
+            this.Container = container;
 
 
             foreach (var contract in ImplementedContracts.Values)
             {
-                logger.Trace($"Adding behaviour for contract {contract.Name}");
+                logger.Trace($"Adding behaviour for contract {contract.Name}", ".ctor");
                 var provider = new WcfInstanceProvider(container);
                 var behaviour = new WcfInstanceBehaviour(provider);
                 contract.Behaviors.Add(behaviour);
@@ -40,7 +40,7 @@ namespace Stugo.Glue.Wcf
                 }
 
                 serviceDebugBehaviour.IncludeExceptionDetailInFaults = true;
-                logger.Trace("Setting IncludeExceptionDetailInFaults = true");
+                logger.Trace("Setting IncludeExceptionDetailInFaults = true", ".ctor");
             }
         }
     }

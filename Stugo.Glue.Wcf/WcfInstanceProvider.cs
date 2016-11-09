@@ -27,14 +27,14 @@ namespace Stugo.Glue.Wcf
         public object GetInstance(InstanceContext instanceContext)
         {
             var serviceType = instanceContext.Host.Description.ServiceType;
-            logger.Trace($"Constructing service instance for {serviceType.FullName}");
+            logger.Trace($"Constructing service instance for {serviceType.FullName}", nameof(GetInstance));
             return this.container.Resolve(serviceType);
         }
 
 
         public void ReleaseInstance(InstanceContext instanceContext, object instance)
         {
-            logger.Trace($"Releasing service instance of type {instance.GetType().FullName}");
+            logger.Trace($"Releasing service instance of type {instance.GetType().FullName}", nameof(ReleaseInstance));
             var disposable = instance as IDisposable;
 
             if (disposable != null)

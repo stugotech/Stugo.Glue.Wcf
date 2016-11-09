@@ -20,7 +20,7 @@ namespace Stugo.Glue.Wcf
         public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)
         {
             var serviceHost = (WcfServiceHost)serviceHostBase;
-            var errorHandler = serviceHost.container.Resolve<IErrorHandler>();
+            var errorHandler = serviceHost.Container.Resolve<IErrorHandler>();
 
             foreach (ChannelDispatcher dispatcher in serviceHostBase.ChannelDispatchers)
             {
