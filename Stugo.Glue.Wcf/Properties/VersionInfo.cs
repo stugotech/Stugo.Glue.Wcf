@@ -1,4 +1,3 @@
 ﻿using System.Reflection;
-// this will be filled in by CI server
-[assembly: AssemblyVersion("0.0.*")]
-[assembly: AssemblyInformationalVersion("LOCAL BUILD")]
+[assembly: AssemblyVersion("2.4.0.3")]
+[assembly: AssemblyInformationalVersion("2.4.0.3")]

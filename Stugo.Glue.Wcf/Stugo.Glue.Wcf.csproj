@@ -52,24 +52,24 @@
       <HintPath>..\packages\log4net.2.0.5\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.0'" Include="Stugo.Glue, Version=2.6.0.9, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stugo.Glue.2.6.0.9\lib\net40\Stugo.Glue.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.0'" Include="Stugo.Logging, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stugo.Logging.2.0.0.6\lib\net40\Stugo.Logging.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Condition="'$(TargetFrameworkVersion)'=='v4.5'" Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.0'" Include="Stugo.Glue, Version=2.6.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stugo.Glue.2.6.0.9\lib\net40\Stugo.Glue.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Condition="'$(TargetFrameworkVersion)'=='v4.5'" Include="Stugo.Glue, Version=2.6.0.9, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Stugo.Glue.2.6.0.9\lib\net45\Stugo.Glue.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.5'" Include="Stugo.Logging, Version=2.0.0.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Stugo.Logging.2.0.0.6\lib\net45\Stugo.Logging.dll</HintPath>
+    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.0'" Include="Stugo.Logging, Version=2.0.1.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stugo.Logging.2.0.1.10\lib\net40\Stugo.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Condition="'$(TargetFrameworkVersion)'=='v4.5'" Include="Stugo.Logging, Version=2.0.1.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stugo.Logging.2.0.1.10\lib\net45\Stugo.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
